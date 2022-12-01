@@ -1,7 +1,7 @@
 import os
 import openai
-openai.organization = "org-26MZrYGH1VczLYfeJkoCXzKY"
-openai.api_key = "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"
+openai.organization = os.environ["OPENAI_ORG"]
+openai.api_key = os.environ["OPENAI_API_KEY"]
 #openai.Model.list()
 
 response = openai.Image.create(
