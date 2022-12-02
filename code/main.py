@@ -5,7 +5,7 @@ openai.api_key = os.environ["OPENAI_API_KEY"]
 #openai.Model.list()
 
 response = openai.Image.create(
-  prompt="Chicago Illinois",
+  prompt="7 wonders of the world",
   n=1,
   size="256x256"
 )
